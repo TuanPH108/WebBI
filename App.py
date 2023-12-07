@@ -1,3 +1,11 @@
+import streamlit as st
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+from io import BytesIO
+import base64
+
 
 st.title('Real Estate Prediction')
 
@@ -19,6 +27,3 @@ if uploaded_file is not None:
     dashboard_image2 = "DistributionDashboard.png"
     st.image(dashboard_image2, caption='Dashboard of Distribution', use_column_width=True)
     
- 
-
-
